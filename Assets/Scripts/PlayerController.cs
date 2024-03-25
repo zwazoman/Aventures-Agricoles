@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using 
+
 
 public class PlayerController : MonoBehaviour
 {
     Collider2D _coll2d;
     Rigidbody2D _rb2d;
     bool _isGrounded;
+    float _horizontal;
+    float _speed = 8f;
+    float _jumpPower = 16f;
 
     private void Awake()
     {
